@@ -80,12 +80,8 @@ class Human:
         self.home.mess = 0
 
     def to_repair(self):
-
         self.money -= 50
-        self.car.strength = self.car.strength * 100
-        self.car.fuel = self.car.fuel * 100
-        self.car.consumption = self.car.consumption *100
-
+        self.car.strength = self.car.strength + 100
 
 
     def days_indekses(self, day):
