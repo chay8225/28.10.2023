@@ -70,21 +70,21 @@ class Human:
             self.satiety += 2
 
     def chill(self):
-        if self.chill():
-            self.gladness += 10
-            self.home.mess += 5
+
+        self.gladness += 10
+        self.home.mess += 5
 
     def clean_home(self):
-        if self.home.mess():
-            self.gladness -= 5
-            self.home.mess = 0
+
+        self.gladness -= 5
+        self.home.mess = 0
 
     def to_repair(self):
-        if self.car():
-            self.money -= 50
-            self.car.strength = self.car.strength * 100
-            self.car.fuel = self.car.fuel * 100
-            self.car.consumption = self.car.consumption *100
+
+        self.money -= 50
+        self.car.strength = self.car.strength * 100
+        self.car.fuel = self.car.fuel * 100
+        self.car.consumption = self.car.consumption *100
 
 
 
